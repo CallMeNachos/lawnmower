@@ -1,9 +1,7 @@
 from mower.parser import Parser
 
+
 class Lawn(Parser):
-    """
-    Get lawn area
-    """
     def __init__(self, data):
         super().__init__(data)
         self.limit_x, self.limit_y = self.lawn_parser()
